@@ -1,6 +1,7 @@
 import React from 'react';
-import { Button, Card, Col, Container } from 'react-bootstrap';
+import { Card, Col, Container } from 'react-bootstrap';
 import { BiShoppingBag } from 'react-icons/bi';
+import { FcRating } from 'react-icons/fc';
 import './Lipstick.css';
 
 const Lipstick = ({ lipstick }) => {
@@ -15,9 +16,14 @@ const Lipstick = ({ lipstick }) => {
 							<Card.Title>{name}</Card.Title>
 							<h5>Price: {price}$</h5>
 							<Card.Text>{description}</Card.Text>
-							<Button className="text-center btn btn-dark">
-								Add to cart <BiShoppingBag />
-							</Button>
+							<div>
+								<button type="button" className=" btn btn-outline-dark">
+									Add to cart <BiShoppingBag />
+								</button>
+								<button type="button" className="btn btn-outline-secondary">
+									Rate this product <FcRating />
+								</button>
+							</div>
 						</Card.Body>
 					</Card>
 				</Col>
