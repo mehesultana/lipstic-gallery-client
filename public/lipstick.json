@@ -1,0 +1,107 @@
+[
+	{
+		"id": 1,
+		"name": "LIPSTICK / AUTE CUTURE STARRING ROSALÍA",
+		"price": "30",
+		"description": "A collection of red and neutral Lipstick shades in Matte and Amplified finishes co-created by Rosalía.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SNM1M7_640x600_0.jpg"
+	},
+	{
+		"id": 2,
+		"name": "POWDER KISS LIQUID LIPCOLOUR / RUBY'S CREW",
+		"price": "21",
+		"description": "Our iconic, vivid blue-red hue – now in a whipped, mousse-like texture that moisturizes lips for ten hours, too!",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SR8040_640x600_0.jpg"
+	},
+	{
+		"id": 3,
+		"name": "LUSTREGLASS SHEER-SHINE LIPSTICK",
+		"price": "15",
+		"description": "A lightweight, raspberry seed- and organic extra-virgin olive oil-infused lipstick that delivers sheer and shiny colour with a long-wearing, lustrous finish.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SMXF29_640x600_0.jpg"
+	},
+	{
+		"id": 4,
+		"name": "COLOR MASTER LIPSTICK",
+		"price": "18",
+		"description": "Color Master Lipstick is formulated with Vitamin E and Shea Butter to moisturize and soften the lips, as well as for a smooth appearance.",
+		"img": "https://www.flormar.com/UPLOAD/Flormar/mobile_image_1/thumb/33000123_medium.jpg"
+	},
+	{
+		"id": 5,
+		"name": "PRIME'N LIPS",
+		"price": "10",
+		"description": "A lightweight, raspberry seed- and organic extra-virgin olive oil-infused lipstick that delivers sheer and shiny colour with a long-wearing, lustrous finish.",
+		"img": "https://www.flormar.com/UPLOAD/Flormar/mobile_image_1/thumb/33000018-026_01_medium.jpg"
+	},
+	{
+		"id": 6,
+		"name": "Creamy and Glossy Lipstick",
+		"price": "30",
+		"description": "A lipstick with special texture enriched with oils to smooth your lips and offer a glossy, colorful finish.",
+		"img": "https://www.flormar.com/UPLOAD/Flormar/mobile_image_1/thumb/33000117-009_01_medium.jpg"
+	},
+	{
+		"id": 7,
+		"name": "LOVE ME LIPSTICK",
+		"price": "30",
+		"description": "A weightless argan oil-infused lipstick that delivers an instant hit of powerful colour and all-day moisture in a luxurious satin-soft finish.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SG7318_640x600_0.jpg"
+	},
+	{
+		"id": 8,
+		"name": "LIPSTICK / TEMPTING FATE",
+		"price": "300",
+		"description": "A limited-edition collection of berry and neutral Lipstick shades in Matte and Amplified finishes.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SNLFH8_640x600_0.jpg"
+	},
+	{
+		"id": 9,
+		"name": "LIPGLASS",
+		"price": "300",
+		"description": "A gloss in a wide colour range that can create a glass-like finish or a subtle sheen.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_S3HT22_640x600_0.jpg"
+	},
+	{
+		"id": 10,
+		"name": "LIPSTICK / BOTANIC PANIC",
+		"price": "30",
+		"description": "The iconic product that made M·A·C famous – now in a maze of seasonal shades for on-trend looks.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SMCCLC_640x600_0.jpg"
+	},
+	{
+		"id": 11,
+		"name": "LIPSTICK / THE DISNEY CRUELLA COLLECTION BY M·A·C",
+		"price": "40",
+		"description": "A rich matte Lipstick formula with high-colour payoff and a creamy matte finish in three Cruella-inspired shades.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SN46LH_640x600_0.jpg"
+	},
+	{
+		"id": 12,
+		"name": "JOY LIPSTICK CASE BY BOB JORDAN",
+		"price": "35",
+		"description": "A limited-edition, online-only, star-printed Joy Lipstick case to customize two best-selling shades.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_112233_640x600_0.jpg"
+	},
+	{
+		"id": 13,
+		"name": "JOY LIPSTICK CASE BY BOB JORDAN",
+		"price": "30",
+		"description": "An innovative non-sticky, weightless liquid lip colour that combines the highly saturated, vibrant colour of a lipstick with the powerful 3D shine of a lip gloss.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SHYG05_640x600_0.jpg"
+	},
+	{
+		"id": 14,
+		"name": "AMPLIFIED LIPSTICK",
+		"price": "30",
+		"description": "An ultra-creamy Lipstick formula with a smooth glide, bold colour payoff, full coverage and a semi-lustrous finish.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_M3LN10_640x600_0.jpg"
+	},
+	{
+		"id": 15,
+		"name": "LIPSTICK / TEMPTING FATE",
+		"price": "30",
+		"description": "A limited-edition collection of berry and neutral Lipstick shades in Matte and Amplified finishes.",
+		"img": "https://www.maccosmetics.com/media/export/cms/products/640x600/mac_sku_SNLFH9_640x600_0.jpg"
+	}
+]

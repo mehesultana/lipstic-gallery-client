@@ -1,0 +1,20 @@
+.lipstick {
+	background-color: rgb(255, 255, 255);
+	border-radius: 20px;
+}
+/* .lipstick img {
+	height: 300px;
+	width: 100%;
+} */
+
+.lipstick:hover {
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px rgb(214, 211, 211);
+	background-color: #ffffff;
+	border: 5px solid #fffffd;
+	cursor: pointer;
+}
+
+.card-img {
+	height: 300px;
+}

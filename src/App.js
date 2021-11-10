@@ -3,6 +3,7 @@ import Home from './pages/Home/Home/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Header from './pages/shared/Header/Header';
 import Footer from './pages/shared/Footer/Footer';
+import Lipsticks from './pages/Home/Lipsticks/Lipsticks';
 
 function App() {
 	return (
@@ -10,11 +11,14 @@ function App() {
 			<Router>
 				<Header />
 				<Switch>
-					<Route>
-						<Home exact path="/" />
+					<Route exact path="/">
+						<Home />
 					</Route>
-					<Route>
-						<Home path="/home" />
+					<Route path="/home">
+						<Home />
+					</Route>
+					<Route path="/lipsticks">
+						<Lipsticks />
 					</Route>
 				</Switch>
 				<Footer />
