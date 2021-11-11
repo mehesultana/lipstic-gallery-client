@@ -9,11 +9,8 @@ const AddReview = () => {
 
 	const onSubmit = (data) => {
 		console.log(data);
-		axios.post('https://bd-dine.herokuapp.com/offers', data).then((res) => {
-			if (res.data.insertedId) {
-				alert('added succesfully');
-				reset();
-			}
+		axios.post('http://localhost:5000/ratings', data).then((res) => {
+			console.log(res);
 		});
 	};
 
