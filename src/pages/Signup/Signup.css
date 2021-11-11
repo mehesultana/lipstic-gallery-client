@@ -1,7 +1,6 @@
-.login-form {
+.signup-form {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-bottom: 60px;
-	margin-top: 50px;
+	margin-bottom: 400px;
 }

@@ -8,6 +8,8 @@ import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
 import AddReview from './pages/Home/AddReview/AddReview';
 import NotFound from './pages/NotFound/NotFound';
+import Signup from './pages/Signup/Signup';
+import PrivateRoute from '../src/pages/Login/PrivateRoute/PrivateRoute';
 
 function App() {
 	return (
@@ -28,9 +30,12 @@ function App() {
 						<Route path="/login">
 							<Login />
 						</Route>
-						<Route path="/addreview">
-							<AddReview />
+						<Route path="/signup">
+							<Signup />
 						</Route>
+						<PrivateRoute path="/addreview">
+							<AddReview />
+						</PrivateRoute>
 						<Route path="*">
 							<NotFound />
 						</Route>
