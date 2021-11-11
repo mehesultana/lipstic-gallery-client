@@ -21,8 +21,7 @@ const Home = () => {
 			{/* lipsticks  */}
 			<Container>
 				<div className="lipsticks-part">
-					<h2 className="text-center mt-5 mb-2">Save your wallet ,</h2>
-					<h4 className="text-center mt-2 mb-5">Enjoy our Super lipsticks</h4>
+					<h2 className="text-center mt-5 mb-2">Shopping is Fun & Easy. Shipping Is Fast.</h2>
 
 					<Row xs={1} md={3} className="g-4 ">
 						{lipsticks.slice(0, 6).map((lipstick) => {

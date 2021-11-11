@@ -21,7 +21,7 @@ const AddReview = () => {
 		<Container className="add-review">
 			<h2 className="text-center">Add a Review</h2>
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<input {...register('lipstick name', { required: true, maxLength: 50 })} placeholder="Lipstick Name" />
+				<input {...register('lipstickname', { required: true, maxLength: 50 })} placeholder="Lipstick Name" />
 				<input {...register('description')} placeholder="Description" />
 				<input type="number" {...register('rate')} placeholder="Rate (0-5)" />
 				<input {...register('name')} placeholder="Your name" />
