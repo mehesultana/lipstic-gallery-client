@@ -10,7 +10,7 @@ const Home = () => {
 	const [lipsticks, setLipsticks] = useState([]);
 
 	useEffect(() => {
-		fetch(`lipstick.json`)
+		fetch(`http://localhost:5000/lipsticks`)
 			.then((res) => res.json())
 			.then((data) => setLipsticks(data));
 	}, []);

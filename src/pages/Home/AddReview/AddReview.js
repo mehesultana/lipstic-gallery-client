@@ -10,7 +10,10 @@ const AddReview = () => {
 	const onSubmit = (data) => {
 		console.log(data);
 		axios.post('http://localhost:5000/ratings', data).then((res) => {
-			console.log(res);
+			if (res.data.insertedId) {
+				alert('added succesfully');
+				reset();
+			}
 		});
 	};
 
@@ -18,9 +21,9 @@ const AddReview = () => {
 		<Container className="add-review">
 			<h2 className="text-center">Add a Review</h2>
 			<form onSubmit={handleSubmit(onSubmit)}>
-				<input {...register('name', { required: true, maxLength: 20 })} placeholder="Lipstick Name" />
+				<input {...register('name', { required: true, maxLength: 50 })} placeholder="Lipstick Name" />
 				<input {...register('description')} placeholder="Description" />
-				<input type="number" {...register('price')} placeholder="Rate (0-5)" />
+				<input type="number" {...register('rate')} placeholder="Rate (0-5)" />
 
 				<input type="submit" />
 			</form>
