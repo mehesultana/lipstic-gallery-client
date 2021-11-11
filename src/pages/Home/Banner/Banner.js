@@ -7,8 +7,9 @@ const Banner = () => {
 	return (
 		<Container>
 			<div className="banner-image">
+				<h1 className="text-center">LIPSTICK GALLERY</h1>
 				<div className="text-center text-white  ">
-					<h2 className="mt-5">BE BEAUTY</h2>
+					<h4 className="mt-5">BE BEAUTY</h4>
 					<h5 className="mt-2">
 						You’re searching for beauty you can believe in.
 						<br />

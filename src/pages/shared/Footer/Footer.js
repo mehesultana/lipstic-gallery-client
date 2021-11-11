@@ -2,17 +2,16 @@ import React from 'react';
 import { Container } from 'react-bootstrap';
 import { ImFacebook2, ImTwitter, ImLinkedin, ImMail, ImYoutube } from 'react-icons/im';
 import { Link } from 'react-router-dom';
+import './Footer.css';
 
 const Footer = () => {
 	return (
-		<Container>
+		<Container className="footer">
 			<footer className="text-center text-lg-start bg-light text-muted">
 				<section className="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-					<div className="me-5 d-none d-lg-block">
+					<div className="me-5 d-none d-lg-block ">
 						<span>Get connected with us on social networks:</span>
-					</div>
 
-					<div>
 						<Link className="ms-3 cart">
 							<ImFacebook2 />
 						</Link>
@@ -36,7 +35,7 @@ const Footer = () => {
 						<div className="row mt-3">
 							<div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
 								<h6 className="text-uppercase fw-bold mb-4">
-									<i className="fas fa-gem me-3"></i>Lipstic Gallery
+									<i className="fas fa-gem me-3"></i>Lipstick Gallery
 								</h6>
 								<p>You’re searching for beauty you can believe in. Makeup that performs beautifully AND doesn’t irritate your skin.</p>
 							</div>
@@ -45,7 +44,7 @@ const Footer = () => {
 								<h6 className="text-uppercase fw-bold mb-4">Products</h6>
 								<p>
 									<a href="#!" className="text-reset">
-										Lipstic
+										Lipstick
 									</a>
 								</p>
 								<p>

@@ -1,6 +1,5 @@
 .review-image {
-	background-image: url('../../../images/reviews.jpg');
-	height: 100px;
-	width: 1296px;
+	height: auto;
+	width: auto;
 	margin-top: 20px;
 }
