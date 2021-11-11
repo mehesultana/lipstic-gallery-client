@@ -1,14 +1,16 @@
 [
 	{
 		"id": 1,
-		"name": "LIPSTICK / AUTE CUTURE STARRING ROSALÍA",
+		"lipstickname": "LIPSTICK / AUTE CUTURE STARRING ROSALÍA",
 		"description": "Its a bright orange shade and looks good with summer whites. This is the type of shade which looks good alone & one doesnt even need makeup on the rest of the face.",
-		"rate": "4"
+		"rate": "4",
+		"name": "Mehe"
 	},
 	{
 		"id": 2,
-		"name": "POWDER KISS LIQUID LIPCOLOUR / RUBY'S CREW",
+		"lipstickname": "POWDER KISS LIQUID LIPCOLOUR / RUBY'S CREW",
 		"description": "This lipstick works wonders. it’s matte lipstick and longlasting almost 10 hrs.It’s bit difficult to remove with removal also but still this is what am looking for .",
-		"rate": "5"
+		"rate": "5",
+		"name": "Mehe"
 	}
 ]
