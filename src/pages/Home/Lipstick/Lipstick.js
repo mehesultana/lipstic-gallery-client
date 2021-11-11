@@ -16,11 +16,11 @@ const Lipstick = ({ lipstick }) => {
 							<Card.Title>{name}</Card.Title>
 							<h5>Price: {price}$</h5>
 							<Card.Text>{description}</Card.Text>
-							<div>
-								<button type="button" className=" btn btn-outline-dark">
+							<div className="">
+								<button type="button" className=" btn btn-outline-dark ">
 									Add to cart <BiShoppingBag />
 								</button>
-								<button type="button" className="btn btn-outline-secondary">
+								<button type="button" className="btn btn-outline-secondary ">
 									Rate this product <FcRating />
 								</button>
 							</div>
