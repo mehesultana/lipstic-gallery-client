@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, Col, Container } from 'react-bootstrap';
 import { BiShoppingBag } from 'react-icons/bi';
 import { FcRating } from 'react-icons/fc';
+import { Link } from 'react-router-dom';
 import './Lipstick.css';
 
 const Lipstick = ({ lipstick }) => {
@@ -20,9 +21,11 @@ const Lipstick = ({ lipstick }) => {
 								<button type="button" className=" btn btn-outline-dark ">
 									Add to cart <BiShoppingBag />
 								</button>
-								<button type="button" className="btn btn-outline-secondary ">
-									Rate this product <FcRating />
-								</button>
+								<Link to="/addreview">
+									<button type="button" className="btn btn-outline-secondary ">
+										Rate this product <FcRating />
+									</button>
+								</Link>
 							</div>
 						</Card.Body>
 					</Card>

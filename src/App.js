@@ -6,6 +6,8 @@ import Footer from './pages/shared/Footer/Footer';
 import Lipsticks from './pages/Home/Lipsticks/Lipsticks';
 import Login from './pages/Login/Login/Login';
 import AuthProvider from './contexts/AuthProvider';
+import AddReview from './pages/Home/AddReview/AddReview';
+import NotFound from './pages/NotFound/NotFound';
 
 function App() {
 	return (
@@ -25,6 +27,12 @@ function App() {
 						</Route>
 						<Route path="/login">
 							<Login />
+						</Route>
+						<Route path="/addreview">
+							<AddReview />
+						</Route>
+						<Route path="*">
+							<NotFound />
 						</Route>
 					</Switch>
 					<Footer />
