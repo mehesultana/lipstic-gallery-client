@@ -7,7 +7,7 @@ const Lipsticks = () => {
 	const [lipsticks, setLipsticks] = useState([]);
 
 	useEffect(() => {
-		fetch(`http://localhost:5000/lipsticks`)
+		fetch(`https://lipstick-gallery.herokuapp.com/lipsticks`)
 			.then((res) => res.json())
 			.then((data) => setLipsticks(data));
 	}, []);
