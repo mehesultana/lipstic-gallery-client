@@ -49,17 +49,9 @@ const useFirebase = () => {
 			.finally(() => setIsLoading(false));
 	};
 
-	const signInWithGoogle = (location, history) => {
+	const signInWithGoogle = () => {
 		setIsLoading(true);
-		signInWithPopup(auth, googleProvider)
-			.then((result) => {
-				const user = result.user;
-				setAuthError('');
-			})
-			.catch((error) => {
-				setAuthError(error.message);
-			})
-			.finally(() => setIsLoading(false));
+		return signInWithPopup(auth, googleProvider);
 	};
 
 	// observer user state

@@ -8,9 +8,9 @@ import './Login.css';
 const Login = () => {
 	const [loginData, setLoginData] = useState({});
 	const { user, loginUser, signInWithGoogle, isLoading } = useAuth();
-
 	const location = useLocation();
 	const history = useHistory();
+	const redirect_uri = location.state?.from || '/addreview';
 
 	const handleOnChange = (e) => {
 		const field = e.target.name;
@@ -25,7 +25,10 @@ const Login = () => {
 	};
 
 	const handleGoogleSignIn = () => {
-		signInWithGoogle(location, history);
+		signInWithGoogle().then((result) => {
+			console.log(result);
+			history.push(redirect_uri);
+		});
 	};
 
 	return (
