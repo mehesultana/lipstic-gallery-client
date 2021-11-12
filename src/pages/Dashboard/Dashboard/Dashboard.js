@@ -1,6 +1,7 @@
 import React from 'react';
-import { CDBSidebar, CDBSidebarContent, CDBSidebarFooter, CDBSidebarHeader, CDBSidebarMenu, CDBSidebarMenuItem } from 'cdbreact';
+import { CDBSidebar, CDBSidebarContent, CDBSidebarHeader, CDBSidebarMenu, CDBSidebarMenuItem } from 'cdbreact';
 import { NavLink } from 'react-router-dom';
+import { BiShoppingBag } from 'react-icons/bi';
 
 const Dashboard = () => {
 	return (
@@ -14,30 +15,22 @@ const Dashboard = () => {
 
 				<CDBSidebarContent className="sidebar-content">
 					<CDBSidebarMenu>
-						<NavLink exact to="/" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="columns">My Orders</CDBSidebarMenuItem>
+						<NavLink exact to="/order" activeClassName="activeClicked">
+							<CDBSidebarMenuItem>
+								<BiShoppingBag /> My Orders
+							</CDBSidebarMenuItem>
 						</NavLink>
-						<NavLink exact to="/tables" activeClassName="activeClicked">
+						<NavLink exact to="/payment" activeClassName="activeClicked">
 							<CDBSidebarMenuItem icon="table">Payment</CDBSidebarMenuItem>
 						</NavLink>
 						<NavLink exact to="/profile" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="user">Review</CDBSidebarMenuItem>
+							<CDBSidebarMenuItem icon="star">Review</CDBSidebarMenuItem>
 						</NavLink>
 						<NavLink exact to="/analytics" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
+							<CDBSidebarMenuItem icon="user">Analytics</CDBSidebarMenuItem>
 						</NavLink>
 					</CDBSidebarMenu>
 				</CDBSidebarContent>
-
-				<CDBSidebarFooter style={{ textAlign: 'center' }}>
-					<div
-						style={{
-							padding: '20px 5px',
-						}}
-					>
-						Sidebar Footer
-					</div>
-				</CDBSidebarFooter>
 			</CDBSidebar>
 		</div>
 	);
