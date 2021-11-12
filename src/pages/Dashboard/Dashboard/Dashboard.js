@@ -8,20 +8,20 @@ const Dashboard = () => {
 			<CDBSidebar textColor="#fff" backgroundColor="#333">
 				<CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
 					<a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-						Sidebar
+						Menu
 					</a>
 				</CDBSidebarHeader>
 
 				<CDBSidebarContent className="sidebar-content">
 					<CDBSidebarMenu>
 						<NavLink exact to="/" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="columns">Dashboard</CDBSidebarMenuItem>
+							<CDBSidebarMenuItem icon="columns">My Orders</CDBSidebarMenuItem>
 						</NavLink>
 						<NavLink exact to="/tables" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="table">Tables</CDBSidebarMenuItem>
+							<CDBSidebarMenuItem icon="table">Payment</CDBSidebarMenuItem>
 						</NavLink>
 						<NavLink exact to="/profile" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="user">Profile page</CDBSidebarMenuItem>
+							<CDBSidebarMenuItem icon="user">Review</CDBSidebarMenuItem>
 						</NavLink>
 						<NavLink exact to="/analytics" activeClassName="activeClicked">
 							<CDBSidebarMenuItem icon="chart-line">Analytics</CDBSidebarMenuItem>
