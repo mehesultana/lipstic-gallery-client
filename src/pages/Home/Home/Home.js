@@ -38,7 +38,7 @@ const Home = () => {
 				<div className="text-center">
 					<Link to="/lipsticks">
 						<button type="button" className="btn btn-warning ">
-							Explore More <BsFillArrowRightCircleFill />
+							More <BsFillArrowRightCircleFill />
 						</button>
 					</Link>
 				</div>
