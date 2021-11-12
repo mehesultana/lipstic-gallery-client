@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Col, Container, Button } from 'react-bootstrap';
+import { Card, Col, Container } from 'react-bootstrap';
 import { BiShoppingBag } from 'react-icons/bi';
 import { FcRating } from 'react-icons/fc';
 import { Link } from 'react-router-dom';
@@ -21,9 +21,9 @@ const Lipstick = ({ lipstick, setBookingSuccess }) => {
 							<Card.Text>{description}</Card.Text>
 							<div className="">
 								<Link to="/order">
-									<Button variant="contained">
+									<button type="button" className="btn btn-outline-secondary ">
 										Add to cart <BiShoppingBag />
-									</Button>
+									</button>
 								</Link>
 								<Link to="/addreview">
 									<button type="button" className="btn btn-outline-secondary ">

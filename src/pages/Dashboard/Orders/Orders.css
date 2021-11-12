@@ -1,0 +1,20 @@
+.add-review {
+	margin-top: 50px;
+	margin-bottom: 230px;
+}
+
+.add-review form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.add-review form input,
+textarea {
+	width: 40%;
+	margin-bottom: 10px;
+}
+.error {
+	color: red;
+}

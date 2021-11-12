@@ -4,10 +4,11 @@ import { NavLink } from 'react-router-dom';
 import { BiShoppingBag } from 'react-icons/bi';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
 import DashboardHome from '../DashboardHome/DashboardHome';
-import Order from '../../Order/Order';
+
 import Payment from '../../Payment/Payment';
 import Profile from '../Profile/Profile';
 import Review from '../Review/Review';
+import Orders from '../Orders/Orders';
 
 const Dashboard = () => {
 	let { path } = useRouteMatch();
@@ -22,7 +23,7 @@ const Dashboard = () => {
 
 				<CDBSidebarContent className="sidebar-content">
 					<CDBSidebarMenu>
-						<NavLink exact to="/dashboard/order" activeClassName="activeClicked">
+						<NavLink exact to="/dashboard/orders" activeClassName="activeClicked">
 							<CDBSidebarMenuItem>
 								<BiShoppingBag /> My Orders
 							</CDBSidebarMenuItem>
@@ -44,9 +45,9 @@ const Dashboard = () => {
 					<Route exact path={path}>
 						<DashboardHome></DashboardHome>
 					</Route>
-					<Order path={`${path}/order`}>
-						<Order></Order>
-					</Order>
+					<Orders path={`${path}/orders`}>
+						<Orders></Orders>
+					</Orders>
 					<Payment path={`${path}/payment`}>
 						<Payment></Payment>
 					</Payment>
