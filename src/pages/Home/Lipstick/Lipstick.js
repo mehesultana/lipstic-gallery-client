@@ -20,9 +20,11 @@ const Lipstick = ({ lipstick, setBookingSuccess }) => {
 							<h5>Price: {price}$</h5>
 							<Card.Text>{description}</Card.Text>
 							<div className="">
-								<Button variant="contained">
-									Add to cart <BiShoppingBag />
-								</Button>
+								<Link to="/order">
+									<Button variant="contained">
+										Add to cart <BiShoppingBag />
+									</Button>
+								</Link>
 								<Link to="/addreview">
 									<button type="button" className="btn btn-outline-secondary ">
 										Rate this product <FcRating />
