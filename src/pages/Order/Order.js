@@ -32,9 +32,9 @@ const Order = () => {
 	};
 
 	return (
-		<Container className="text-center mt-5">
-			<h2>Place Your Order Here</h2>
-			<form className="order-form" onSubmit={handleSubmit(onSubmit)}>
+		<Container className="add-review">
+			<h2 className="text-center">Place Your Order Here</h2>
+			<form onSubmit={handleSubmit(onSubmit)}>
 				<input defaultValue={user.displayName} {...register('name')} />
 
 				<input defaultValue={user.email} {...register('email', { required: true })} />

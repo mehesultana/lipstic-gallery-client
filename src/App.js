@@ -11,8 +11,6 @@ import NotFound from './pages/NotFound/NotFound';
 import Signup from './pages/Signup/Signup';
 import PrivateRoute from '../src/pages/Login/PrivateRoute/PrivateRoute';
 import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
-import Order from './pages/Order/Order';
-import Payment from './pages/Payment/Payment';
 
 function App() {
 	return (
@@ -42,12 +40,7 @@ function App() {
 						<PrivateRoute path="/dashboard">
 							<Dashboard />
 						</PrivateRoute>
-						<PrivateRoute path="/order">
-							<Order />
-						</PrivateRoute>
-						<PrivateRoute path="/payment">
-							<Payment />
-						</PrivateRoute>
+
 						<Route path="*">
 							<NotFound />
 						</Route>
