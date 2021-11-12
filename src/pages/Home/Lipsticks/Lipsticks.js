@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row } from 'react-bootstrap';
 import Lipstick from '../Lipstick/Lipstick';
+import lipstickBanner from '../../../images/banner4.jpg';
 import './Lipsticks.css';
 
 const Lipsticks = () => {
@@ -14,8 +15,8 @@ const Lipsticks = () => {
 
 	return (
 		<Container>
-			<Container className="lipstic-banner">
-				<h2>Lipsticks</h2>
+			<Container className="lipstick-banner">
+				<img src={lipstickBanner} className="img-fluid" alt="ResponsiveImage" />
 			</Container>
 			<div className="text-center mt-4 mb-5">
 				<h1>NEW ARRIVALS</h1>

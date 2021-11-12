@@ -1,6 +1,5 @@
-.lipstic-banner {
-	background-image: url('../../../images/banner3.jfif');
-	height: 100px;
-	width: 1296px;
+.lipstick-banner {
+	height: auto;
+	width: auto;
 	margin-top: 20px;
 }

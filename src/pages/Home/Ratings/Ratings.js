@@ -17,7 +17,6 @@ const Ratings = () => {
 			<div className=" text-center mt-4 mb-5">
 				<Container className="review-image">
 					<img src={review} className="img-fluid" alt="ResponsiveImage" />
-					<h2>Reviews</h2>
 				</Container>
 				<p>Compare the most helpful customer reviews of the best rated products in our Lipsticks store. These products are shortlisted based on the overall star rating and the number of customer reviews received by each product in the store, and are refreshed regularly.</p>
 			</div>
