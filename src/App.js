@@ -10,6 +10,7 @@ import AddReview from './pages/Home/AddReview/AddReview';
 import NotFound from './pages/NotFound/NotFound';
 import Signup from './pages/Signup/Signup';
 import PrivateRoute from '../src/pages/Login/PrivateRoute/PrivateRoute';
+import Dashboard from './pages/Dashboard/Dashboard/Dashboard';
 
 function App() {
 	return (
@@ -35,6 +36,9 @@ function App() {
 						</Route>
 						<PrivateRoute path="/addreview">
 							<AddReview />
+						</PrivateRoute>
+						<PrivateRoute path="/dashboard">
+							<Dashboard />
 						</PrivateRoute>
 						<Route path="*">
 							<NotFound />
