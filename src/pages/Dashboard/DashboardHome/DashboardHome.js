@@ -1,10 +1,12 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
+import Profile from '../Profile/Profile';
 
 const DashboardHome = () => {
 	return (
-		<div>
-			<h1>f</h1>
-		</div>
+		<Container>
+			<Profile />
+		</Container>
 	);
 };
 
