@@ -10,7 +10,7 @@ const AddReview = () => {
 	const { user } = useAuth();
 	const onSubmit = (data) => {
 		console.log(data);
-		axios.post('http://localhost:5000/ratings', data).then((res) => {
+		axios.post('https://lipstick-gallery.herokuapp.com/ratings', data).then((res) => {
 			if (res.data.insertedId) {
 				alert('added succesfully');
 				reset();
@@ -25,7 +25,7 @@ const AddReview = () => {
 				<input {...register('lipstickname', { required: true, maxLength: 50 })} placeholder="Lipstick Name" />
 				<input {...register('description')} placeholder="Description" />
 				<input type="number" {...register('rate')} placeholder="Rate (0-5)" />
-				<input defaultValue={user.displayName} {...register('name')} />
+				<input {...register('name')} placeholder="Your name" />
 				<input defaultValue={user.email} {...register('email', { required: true })} />
 
 				<input type="submit" />
