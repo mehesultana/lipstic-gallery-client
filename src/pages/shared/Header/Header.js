@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
-import { HashLink } from 'react-router-hash-link';
 import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
@@ -19,8 +18,8 @@ const Header = () => {
 						<Nav.Link className="ms-3 " as={Link} to="/lipsticks">
 							Lipsticks
 						</Nav.Link>
-						<Nav.Link className="ms-3 " as={HashLink} to="/home#ratings">
-							Ratings
+						<Nav.Link className="ms-3 " as={Link} to="/aboutus">
+							About Us
 						</Nav.Link>
 						{user?.email ? (
 							<div>
