@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Button, Container } from 'react-bootstrap';
+import { Button, Card, Col, Container } from 'react-bootstrap';
 import { AiOutlineDelete } from 'react-icons/ai';
 import './ManageLipsticks.css';
 
@@ -35,14 +35,17 @@ const ManageLipsticks = () => {
 				<hr />
 				{lipsticks.map((lipstick) => (
 					<div key={lipstick._id}>
-						<h3>{lipstick.name}</h3>
-						<h5>Available lipstick : {lipstick.price}%</h5>
-						<Button className="btn btn-danger" onClick={() => handleDelete(lipstick._id)}>
-							Delete <AiOutlineDelete />
-						</Button>
-						<br />
-						<br />
-						<hr />
+						<Col>
+							<Card className="offer">
+								<Card.Body>
+									<Card.Title className="text-center">{lipstick.name}</Card.Title>
+
+									<Button className="btn btn-danger" onClick={() => handleDelete(lipstick._id)}>
+										Delete <AiOutlineDelete />
+									</Button>
+								</Card.Body>
+							</Card>
+						</Col>
 					</div>
 				))}
 			</div>

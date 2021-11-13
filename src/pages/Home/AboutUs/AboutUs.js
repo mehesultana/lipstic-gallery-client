@@ -1,9 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './AboutUs.css';
+import aboutus from '../../../images/banner8.jpg';
 
 const AboutUs = () => {
 	return (
-		<Container className="text-center mt-5 mb-5">
+		<Container className="text-center mt-5 mb-5 aboutus">
+			<Container className="lipstick-banner">
+				<img src={aboutus} className="img-fluid" alt="ResponsiveImage" />
+			</Container>
 			<h3>ABOUT US</h3>
 			<p>
 				The contemporary Indian beauty expert - Lipstick Gallery continuously innovates to offer a wide range of high performance and world class cosmetics and skincare products that have earned recognition from the People for the Ethical Treatment of Animals (PETA). We, at Lakme, combine

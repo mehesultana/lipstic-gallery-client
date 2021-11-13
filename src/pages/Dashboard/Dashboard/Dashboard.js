@@ -1,5 +1,5 @@
 import React from 'react';
-import { CDBSidebar, CDBSidebarContent, CDBSidebarHeader, CDBSidebarMenu, CDBSidebarMenuItem } from 'cdbreact';
+import { CDBSidebar, CDBSidebarContent, CDBSidebarHeader, CDBSidebarMenu, CDBSidebarMenuItem, CDBBtn } from 'cdbreact';
 import { NavLink } from 'react-router-dom';
 import { BiShoppingBag } from 'react-icons/bi';
 import { Switch, Route, useRouteMatch } from 'react-router-dom';
@@ -13,9 +13,13 @@ import MakeAdmin from '../MakeAdmin/MakeAdmin';
 import AddLipstick from '../AddLipstick/AddLipstick';
 import ManageLipsticks from '../ManageLipsticks/ManageLipsticks';
 import { Container } from 'react-bootstrap';
+import useAuth from '../../../hooks/useAuth';
+import './Dashboard.css';
 
 const Dashboard = () => {
 	let { path } = useRouteMatch();
+	const { logout } = useAuth();
+
 	return (
 		<Container className="dashboard">
 			<div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
@@ -51,6 +55,9 @@ const Dashboard = () => {
 							<NavLink exact to="/dashboard/makeadmin" activeClassName="activeClicked">
 								<CDBSidebarMenuItem icon="plus">Make Admin</CDBSidebarMenuItem>
 							</NavLink>
+							<CDBBtn color="warning" circle onClick={logout} variant="light">
+								Logout
+							</CDBBtn>
 						</CDBSidebarMenu>
 					</CDBSidebarContent>
 				</CDBSidebar>
