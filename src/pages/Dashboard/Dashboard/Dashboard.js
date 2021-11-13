@@ -9,57 +9,81 @@ import Payment from '../../Payment/Payment';
 import Profile from '../Profile/Profile';
 import Review from '../Review/Review';
 import Orders from '../Orders/Orders';
+import MakeAdmin from '../MakeAdmin/MakeAdmin';
+import AddLipstick from '../AddLipstick/AddLipstick';
+import ManageLipsticks from '../ManageLipsticks/ManageLipsticks';
+import { Container } from 'react-bootstrap';
 
 const Dashboard = () => {
 	let { path } = useRouteMatch();
 	return (
-		<div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
-			<CDBSidebar textColor="#fff" backgroundColor="#333">
-				<CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
-					<a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
-						Menu
-					</a>
-				</CDBSidebarHeader>
+		<Container className="dashboard">
+			<div style={{ display: 'flex', height: '100vh', overflow: 'scroll initial' }}>
+				<CDBSidebar textColor="#fff" backgroundColor="#333">
+					<CDBSidebarHeader prefix={<i className="fa fa-bars fa-large"></i>}>
+						<a href="/" className="text-decoration-none" style={{ color: 'inherit' }}>
+							Menu
+						</a>
+					</CDBSidebarHeader>
 
-				<CDBSidebarContent className="sidebar-content">
-					<CDBSidebarMenu>
-						<NavLink exact to="/dashboard/orders" activeClassName="activeClicked">
-							<CDBSidebarMenuItem>
-								<BiShoppingBag /> My Orders
-							</CDBSidebarMenuItem>
-						</NavLink>
-						<NavLink exact to="/dashboard/payment" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="table">Payment</CDBSidebarMenuItem>
-						</NavLink>
-						<NavLink exact to="/dashboard/review" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="star">Review</CDBSidebarMenuItem>
-						</NavLink>
-						<NavLink exact to="/dashboard/profile" activeClassName="activeClicked">
-							<CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
-						</NavLink>
-					</CDBSidebarMenu>
-				</CDBSidebarContent>
-			</CDBSidebar>
-			<div>
-				<Switch>
-					<Route exact path={path}>
-						<DashboardHome></DashboardHome>
-					</Route>
-					<Orders path={`${path}/orders`}>
-						<Orders></Orders>
-					</Orders>
-					<Payment path={`${path}/payment`}>
-						<Payment></Payment>
-					</Payment>
-					<Profile path={`${path}/profile`}>
-						<Profile></Profile>
-					</Profile>
-					<Review path={`${path}/review`}>
-						<Review></Review>
-					</Review>
-				</Switch>
+					<CDBSidebarContent className="sidebar-content">
+						<CDBSidebarMenu>
+							<NavLink exact to="/dashboard/profile" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="user">Profile</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/orders" activeClassName="activeClicked">
+								<CDBSidebarMenuItem>
+									<BiShoppingBag /> My Orders
+								</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/payment" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="table">Payment</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/review" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="star">Review</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/add" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="plus">Add Lipstick</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/manage" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="plus">Manage Product</CDBSidebarMenuItem>
+							</NavLink>
+							<NavLink exact to="/dashboard/makeadmin" activeClassName="activeClicked">
+								<CDBSidebarMenuItem icon="plus">Make Admin</CDBSidebarMenuItem>
+							</NavLink>
+						</CDBSidebarMenu>
+					</CDBSidebarContent>
+				</CDBSidebar>
+				<div>
+					<Switch>
+						<Route exact path={path}>
+							<DashboardHome></DashboardHome>
+						</Route>
+						<Route path={`${path}/orders`}>
+							<Orders></Orders>
+						</Route>
+						<Route path={`${path}/payment`}>
+							<Payment></Payment>
+						</Route>
+						<Route path={`${path}/profile`}>
+							<Profile></Profile>
+						</Route>
+						<Route path={`${path}/review`}>
+							<Review></Review>
+						</Route>
+						<Route path={`${path}/add`}>
+							<AddLipstick></AddLipstick>
+						</Route>
+						<Route path={`${path}/manage`}>
+							<ManageLipsticks></ManageLipsticks>
+						</Route>
+						<Route path={`${path}/makeadmin`}>
+							<MakeAdmin></MakeAdmin>
+						</Route>
+					</Switch>
+				</div>
 			</div>
-		</div>
+		</Container>
 	);
 };
 

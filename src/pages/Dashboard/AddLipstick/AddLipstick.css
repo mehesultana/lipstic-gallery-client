@@ -1,0 +1,17 @@
+.add-lipstick {
+	margin-top: 50px;
+	margin-bottom: 230px;
+}
+
+.add-lipstick form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 100px;
+}
+.add-lipstick form input,
+textarea {
+	width: 100%;
+	margin-bottom: 10px;
+}
